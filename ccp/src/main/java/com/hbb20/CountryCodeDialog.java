@@ -2,6 +2,7 @@ package com.hbb20;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Window;
@@ -14,7 +15,7 @@ import java.util.List;
  * Created by hbb20 on 11/1/16.
  */
 class CountryCodeDialog {
-    public static void openCountryCodeDialog(CountryCodePicker codePicker) {
+    public static void openCountryCodeDialog(CountryCodePicker codePicker, final CountryCodePicker.ICountryCodePicker delegate) {
         Context context=codePicker.getContext();
         final Dialog dialog = new Dialog(context);
         codePicker.refreshCustomMasterList();
@@ -33,6 +34,14 @@ class CountryCodeDialog {
         final CountryCodeAdapter cca = new CountryCodeAdapter(context, masterCountries, codePicker, editText_search, textView_noResult, dialog);
         recyclerView_countryDialog.setLayoutManager(new LinearLayoutManager(context));
         recyclerView_countryDialog.setAdapter(cca);
+        dialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
+            @Override
+            public void onDismiss(DialogInterface dialog) {
+                if (delegate != null) {
+                    delegate.dialogDismissed();
+                }
+            }
+        });
         dialog.show();
     }
 }

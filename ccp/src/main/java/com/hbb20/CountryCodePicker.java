@@ -68,10 +68,25 @@ public class CountryCodePicker extends RelativeLayout {
     String customMasterCountries;
     Language customLanguage = Language.ENGLISH;
     boolean keyboardAutoPopOnSearch = true;
+    public interface ICountryCodePicker {
+        void dialogApeared();
+
+        void dialogDismissed();
+    }
+
+    private ICountryCodePicker delegate;
+
+    public void setDelegate(ICountryCodePicker delegate) {
+        this.delegate = delegate;
+    }
+
     View.OnClickListener countryCodeHolderClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            CountryCodeDialog.openCountryCodeDialog(codePicker);
+            CountryCodeDialog.openCountryCodeDialog(codePicker,delegate);
+            if (CountryCodePicker.this.delegate != null) {
+                CountryCodePicker.this.delegate.dialogApeared();
+            }
         }
     };
 
