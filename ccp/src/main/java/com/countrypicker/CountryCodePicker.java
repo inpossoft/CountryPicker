@@ -123,7 +123,7 @@ public class CountryCodePicker extends RelativeLayout {
         linearFlagHolder = (LinearLayout) holderView.findViewById(R.id.linear_flag_holder);
         codePicker = this;
         applyCustomProperty(attrs);
-        holder.setOnClickListener(countryCodeHolderClickListener);
+        holderView.setOnClickListener(countryCodeHolderClickListener);
     }
 
     private void applyCustomProperty(AttributeSet attrs) {
