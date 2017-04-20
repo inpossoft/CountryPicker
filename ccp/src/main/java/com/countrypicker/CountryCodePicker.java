@@ -124,6 +124,7 @@ public class CountryCodePicker extends RelativeLayout {
         codePicker = this;
         applyCustomProperty(attrs);
         holderView.setOnClickListener(countryCodeHolderClickListener);
+        holder.setOnClickListener(countryCodeHolderClickListener);
     }
 
     private void applyCustomProperty(AttributeSet attrs) {
