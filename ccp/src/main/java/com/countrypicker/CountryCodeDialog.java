@@ -9,7 +9,7 @@ import android.view.Window;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.hbb20.R;
+import com.countrypicker.R;
 
 import java.util.List;
 

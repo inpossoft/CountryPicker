@@ -3,7 +3,7 @@ package com.countrypicker;
 import android.content.Context;
 import android.util.Log;
 
-import com.hbb20.R;
+import com.countrypicker.R;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;

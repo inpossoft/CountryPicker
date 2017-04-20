@@ -4,14 +4,14 @@ ext {
     bintrayRepo = 'maven'
     bintrayName = 'ccp'
 
-    publishedGroupId = 'com.hbb20'
+    publishedGroupId = 'com.countrypicker'
     libraryName = 'CountryCodePicker'
     artifact = 'ccp'
 
     libraryDescription = 'Country Code Picker (CCP) is an android library which provides an easy way to search and select international country code for the phone number.'
 
-    siteUrl = 'https://github.com/hbb20/CountryCodePickerProject'
-    gitUrl = 'https://github.com/hbb20/CountryCodePickerProject.git'
+    siteUrl = 'https://github.com.countrypicker/CountryCodePickerProject'
+    gitUrl = 'https://github.com.countrypicker/CountryCodePickerProject.git'
 
     libraryVersion = '1.7.1'
 
