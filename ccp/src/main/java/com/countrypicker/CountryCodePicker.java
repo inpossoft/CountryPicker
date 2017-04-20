@@ -253,12 +253,12 @@ public class CountryCodePicker extends RelativeLayout {
 
         if (!hideNameCode) {
             if (showFullName) {
-                textView_selectedCountry.setText(selectedCountry.getName().toUpperCase() + "  +" + selectedCountry.getPhoneCode());
+                textView_selectedCountry.setText(selectedCountry.getName().toUpperCase());
             } else {
-                textView_selectedCountry.setText("(" + selectedCountry.getNameCode().toUpperCase() + ")  +" + selectedCountry.getPhoneCode());
+                textView_selectedCountry.setText(selectedCountry.getNameCode().toUpperCase());
             }
         } else {
-            textView_selectedCountry.setText("+" + selectedCountry.getPhoneCode());
+            textView_selectedCountry.setText(selectedCountry.getPhoneCode());
         }
 
         if (onCountryChangeListener != null) {
