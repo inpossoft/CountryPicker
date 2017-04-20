@@ -28,7 +28,7 @@ How to add to your project
    2. Add ccp view to xml layout
    
       ````xml
-        <com.hbb20.CountryCodePicker
+        <com.countrypicker.CountryCodePicker
           android:id="@+id/ccp"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content" />
@@ -63,7 +63,7 @@ Features
         - Add app:defaultNameCode="US" (replace "US" with your default country name code) to xml layout. Refer <a href="https://goo.gl/FQjUjA">List of countries</a> for name codes.
 
 	       ````xml
-	        <com.hbb20.CountryCodePicker
+	        <com.countrypicker.CountryCodePicker
 	         android:id="@+id/ccp"
 	         android:layout_width="wrap_content"
 	         android:layout_height="wrap_content"
@@ -75,7 +75,7 @@ Features
         - Setting default country using phone code is not recommended. There are few cases where more than one countries have same phone code. Say US and Canada have +1. Putting '1' will result in Canada even if you were intended  for US.  Use app:defaultNameCode or app:countryPreference to overcome issue.
 	
 	       ````xml
-	        <com.hbb20.CountryCodePicker
+	        <com.countrypicker.CountryCodePicker
 	         android:id="@+id/ccp"
 	         android:layout_width="wrap_content"
 	         android:layout_height="wrap_content"
@@ -141,7 +141,7 @@ Features
         - Add app:countryPreference="US,IN,NZ" (replace "US,IN,NZ" with your preference) to xml layout. Refer <a href="https://goo.gl/FQjUjA">List of countries</a> for name codes.
 
 	       ````xml
-	        <com.hbb20.CountryCodePicker
+	        <com.countrypicker.CountryCodePicker
 	         android:id="@+id/ccp"
 	         android:layout_width="wrap_content"
 	         android:layout_height="wrap_content"
@@ -201,7 +201,7 @@ Features
     - Add app:contentColor property to xml layout
    
 	      ````xml
-	      <com.hbb20.CountryCodePicker
+	      <com.countrypicker.CountryCodePicker
 	            android:layout_width="wrap_content"
 	          android:layout_height="wrap_content"
 	          app:contentColor="@color/custom_color"/>                        
@@ -222,7 +222,7 @@ Features
     - Add app:contentColor property to xml layout
   
 	      ````xml
-	      	<com.hbb20.CountryCodePicker
+	      	<com.countrypicker.CountryCodePicker
 	         android:layout_width="wrap_content"
 	         android:layout_height="wrap_content"
 	         app:textSize="26sp"/>                        
@@ -238,7 +238,7 @@ Features
     - Add app:contentColor property to xml layout
 	      
 	````xml
-	      <com.hbb20.CountryCodePicker
+	      <com.countrypicker.CountryCodePicker
 	       android:layout_width="wrap_content"
 	       android:layout_height="wrap_content"
 	       app:arrowSize="26sp"/>                        
@@ -254,7 +254,7 @@ Features
     - Add app:hideCodeName property to xml layout
 	      
 	````xml
-	      <com.hbb20.CountryCodePicker
+	      <com.countrypicker.CountryCodePicker
 	       android:layout_width="wrap_content"
 	       android:layout_height="wrap_content"
 	       app:hideNameCode="true"/>                        
@@ -276,7 +276,7 @@ Features
         - add app:customMasterCountries="US,IN,NZ,BD,PL,RO,ZW" (replace "US,IN,NZ,BD,PL,RO,ZW" by your own country code names) to xml layout. Refer <a href="https://goo.gl/FQjUjA">List of countries</a> for name codes.
 
 	       ````xml
-	        <com.hbb20.CountryCodePicker
+	        <com.countrypicker.CountryCodePicker
 	         android:id="@+id/ccp"
 	         android:layout_width="wrap_content"
 	         android:layout_height="wrap_content"
@@ -311,7 +311,7 @@ Features
         - add app:ccpLanguage="JAPANESE" to xml layout
 
 	       ````xml
-	        <com.hbb20.CountryCodePicker
+	        <com.countrypicker.CountryCodePicker
 	         android:id="@+id/ccp"
 	         android:layout_width="wrap_content"
 	         android:layout_height="wrap_content"
@@ -329,7 +329,7 @@ Features
            - add app:showFlag="false" to remove flag using xml layout
 
    	       ````xml
-   	        <com.hbb20.CountryCodePicker
+   	        <com.countrypicker.CountryCodePicker
    	         android:id="@+id/ccp"
    	         android:layout_width="wrap_content"
    	         android:layout_height="wrap_content"
@@ -351,7 +351,7 @@ Features
 	     
 
       	       ````xml
-      	        <com.hbb20.CountryCodePicker
+      	        <com.countrypicker.CountryCodePicker
       	         android:id="@+id/ccp"
       	         android:layout_width="wrap_content"
       	         android:layout_height="wrap_content"

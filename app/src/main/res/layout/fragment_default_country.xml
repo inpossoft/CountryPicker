@@ -87,7 +87,7 @@
                                     android:layout_height="wrap_content"
                                     android:gravity="center_vertical">
 
-                                    <com.hbb20.CountryCodePicker
+                                    <com.countrypicker.CountryCodePicker
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         app:defaultNameCode="US" />
@@ -153,7 +153,7 @@
                                     android:layout_height="wrap_content"
                                     android:gravity="center_vertical">
 
-                                    <com.hbb20.CountryCodePicker
+                                    <com.countrypicker.CountryCodePicker
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         app:defaultCode="81" />
@@ -296,7 +296,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center_vertical">
 
-                            <com.hbb20.CountryCodePicker
+                            <com.countrypicker.CountryCodePicker
                                 android:id="@+id/ccp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />

@@ -107,7 +107,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="right">
 
-                            <com.hbb20.CountryCodePicker
+                            <com.countrypicker.CountryCodePicker
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 app:contentColor="@android:color/black" />

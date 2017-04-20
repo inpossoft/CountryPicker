@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.hbb20.CountryCodePicker;
+import com.countrypicker.CountryCodePicker;
 
 
 /**

@@ -1,4 +1,4 @@
-package com.hbb20;
+package com.countrypicker;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -8,6 +8,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Window;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.hbb20.R;
 
 import java.util.List;
 

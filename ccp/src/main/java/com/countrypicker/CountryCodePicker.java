@@ -1,4 +1,4 @@
-package com.hbb20;
+package com.countrypicker;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -15,6 +15,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.hbb20.R;
 
 import java.util.ArrayList;
 import java.util.List;

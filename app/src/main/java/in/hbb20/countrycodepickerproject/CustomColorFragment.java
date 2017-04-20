@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.hbb20.CountryCodePicker;
+import com.countrypicker.CountryCodePicker;
 
 
 /**
