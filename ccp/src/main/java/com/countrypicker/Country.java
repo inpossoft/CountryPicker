@@ -221,7 +221,7 @@ public class Country {
 	 * @param threeLetterCode
 	 * @return
 	 */
-	static String getTwoLetterCode(String threeLetterCode) {
+	public static String getTwoLetterCode(String threeLetterCode) {
 		switch (threeLetterCode) {
 			case "ita":
 				return "it";
@@ -682,7 +682,7 @@ public class Country {
 	 * @param twoLetterCode
 	 * @return
 	 */
-	static String getThreeLetterCode(String twoLetterCode) {
+	public static String getThreeLetterCode(String twoLetterCode) {
 		switch (twoLetterCode) {
 			case "kr":
 				return "kor";
