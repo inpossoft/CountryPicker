@@ -157,31 +157,7 @@ public class CountryCodePicker extends RelativeLayout {
             //preference
             countryPreference = a.getString(R.styleable.CountryCodePicker_countryPreference);
             refreshPreferredCountries();
-
-            //default country
-            defaultCountryNameCode = a.getString(R.styleable.CountryCodePicker_defaultNameCode);
-            boolean setUsingNameCode = false;
-            if (defaultCountryNameCode != null && defaultCountryNameCode.length() != 0) {
-                if (Country.getCountryForNameCodeFromLibraryMasterList(customLanguage, defaultCountryNameCode) != null) {
-                    setUsingNameCode = true;
-                    setDefaultCountry(Country.getCountryForNameCodeFromLibraryMasterList(customLanguage, defaultCountryNameCode));
-                    setSelectedCountry(defaultCountry);
-                }
-            }
-
-
-            //if default country is not set using name code.
-            if (!setUsingNameCode) {
-                int defaultCountryCode = a.getInteger(R.styleable.CountryCodePicker_defaultCode, -1);
-
-                //if invalid country is set using xml, it will be replaced with LIB_DEFAULT_COUNTRY_CODE
-                if (Country.getCountryForCode(customLanguage, preferredCountries, defaultCountryCode) == null) {
-                    defaultCountryCode = LIB_DEFAULT_COUNTRY_CODE;
-                }
-                setDefaultCountryUsingPhoneCode(defaultCountryCode);
-                setSelectedCountry(defaultCountry);
-            }
-
+            
             //show flag
             showFlag(a.getBoolean(R.styleable.CountryCodePicker_showFlag, true));
 
@@ -639,6 +615,13 @@ public class CountryCodePicker extends RelativeLayout {
             this.defaultCountryNameCode = defaultCountry.getNameCode();
             setDefaultCountry(defaultCountry);
         }
+    }
+
+    /**
+     * Set placeholder text
+     */
+    public void setPlaceholderText(String placeholderText) {
+        textView_selectedCountry.setText(placeholderText);
     }
 
     /**
